@@ -1,0 +1,12 @@
+drop table users;
+
+create table users (
+seq number primary key,
+userid varchar2(10), 
+uname  varchar2(20), 
+email  varchar2(20), 
+passwd  varchar2(10),  
+regdate date default sysdate
+);
+
+create sequence users_seq start with 1 increment by 1;
